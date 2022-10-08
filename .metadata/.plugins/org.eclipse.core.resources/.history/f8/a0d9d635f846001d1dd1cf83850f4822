@@ -186,31 +186,33 @@ int main(void)
       int hrs = 12;
       while (1)
     	   {
-    	  hrs = hrs%12;	//   0 <= hrs <= 11
     	  if(sec%5==0){
-    		  if((sec-5)/5 != min/5 && (sec-5)/5 != hrs)		// clear sec if it's position is not same min, hrs
+    		  if((sec-5)/5 != min/5 && (sec-5)/5 != hrs)
     		  clearNumberOnClock((sec-5)/5);
     		  if(sec == 60){
     			  ++min;
-    			if(min%5 == 0 ){
-    				if((min-5)/5 != sec/5 && (min-5)/5 != hrs) // clear min if it's position is not same sec, hrs
-    				   clearNumberOnClock((min-5)/5);
-    				if(min == 60){
-    				  if(hrs != sec/5 && min/5 != hrs) 			// clear hrs if it's position is not same sec, min
+    			  if(min == 60){
+    				  if((min-5)/5 != sec/5 && (min-5)/5 != hrs)
+    				  clearNumberOnClock((min-5)/5);
+    				  if(hrs != sec/5 && min/5 != hrs)
     				  clearNumberOnClock(hrs);
     				  ++hrs;
     				  if(hrs == 12) hrs = 0;
     				  min = 0;
     			  }
-    			}
     			  sec = 0;
     		  }
     	  }
+    	  if(hrs == 12) hrs = 0;
     	  setNumberOnClock(min/5);
+    	  if(min%5 == 0 ){
+    		  if((min-5)/5 != sec/5 && (min-5)/5 != hrs)
+    		  clearNumberOnClock((min-5)/5);
+    	  }
     	  setNumberOnClock(sec/5);
     	  setNumberOnClock(hrs);
     	  ++sec;
-    	  HAL_Delay(100);
+    	  HAL_Delay(1000);
 
       /* USER CODE END 3 */
     	   }
