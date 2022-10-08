@@ -105,48 +105,46 @@ int main(void)
   	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_14,RESET);
   	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,RESET);
   	  }
-  void setNumberOnClock(int num){
-  	  if(num==0){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,SET);
-  	  }
-  	  if(num==1){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,SET);
-  	  	  }
-  	  if(num==2){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,SET);
-  	  	  }
-  	  if(num==3){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
-  	  	  }
-  	  if(num==4){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,SET);
-  	  	  }
-  	  if(num==5){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,SET);
-  	  	  }
-  	  if(num==6){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,SET);
-  	  	  }
-  	  if(num==7){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,SET);
-  	  	  }
-  	  if(num==8){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,SET);
-  	  	  }
-  	  if(num==9){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,SET);
-  	  	  }
-  	  if(num==10){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_13,SET);
-  	  	  }
-  	  if(num==11){
-  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_14,SET);
-  	  	  }
-    }
 int num = 0;
     while (1){
     		  if(num==12) clearAllClock();
-    		  setNumberOnClock(num++);
+    		  if(num==0){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,SET);
+    		  }
+    		  if(num==1){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,SET);
+    		  	  }
+    		  if(num==2){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,SET);
+    		  	  }
+    		  if(num==3){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
+    		  	  }
+    		  if(num==4){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,SET);
+    		  	  }
+    		  if(num==5){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,SET);
+    		  	  }
+    		  if(num==6){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,SET);
+    		  	  }
+    		  if(num==7){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,SET);
+    		  	  }
+    		  if(num==8){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,SET);
+    		  	  }
+    		  if(num==9){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,SET);
+    		  	  }
+    		  if(num==10){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_13,SET);
+    		  	  }
+    		  if(num==11){
+    			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_14,SET);
+    		  	  }
+    		  num++;
     		  HAL_Delay(500);
     		   }
     /* USER CODE END 3 */
