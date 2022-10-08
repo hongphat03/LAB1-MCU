@@ -91,23 +91,47 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  void clearAllClock(){
-    	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_13,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_14,RESET);
-  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,RESET);
-  	  }
+  void clearNumberOnClock(int num){
+    	  if(num==0){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,RESET);
+    	  }
+    	  if(num==1){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+    	  	  }
+    	  if(num==2){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+    	  	  }
+    	  if(num==3){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+    	  	  }
+    	  if(num==4){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+    	  	  }
+    	  if(num==5){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,RESET);
+    	  	  }
+    	  if(num==6){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,RESET);
+    	  	  }
+    	  if(num==7){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,RESET);
+    	  	  }
+    	  if(num==8){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,RESET);
+    	  	  }
+    	  if(num==9){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,RESET);
+    	  	  }
+    	  if(num==10){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_13,RESET);
+    	  	  }
+    	  if(num==11){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_14,RESET);
+    	  	  }
+      }
 int num = 0;
     while (1){
-    		  if(num==12) clearAllClock();
+    	if(num==12) clearNumberOnClock();
     		  if(num==0){
     			  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,SET);
     		  }
