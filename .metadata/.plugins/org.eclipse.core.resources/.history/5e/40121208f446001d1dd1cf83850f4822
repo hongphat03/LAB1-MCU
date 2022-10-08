@@ -208,72 +208,62 @@ int main(void)
     int green2 = 3;
     int yellow2 = 2;
     int yellow1 = 2;
-    void resetTime(){
-  	  red1 = 5;
-  	  red2 = 5;
-  	  green1 = 3;
-  	  green2 = 3;
-  	  yellow2 = 2;
-  	  yellow1 = 2;
-    }
     while (1)
-    		   {
-    		     /* USER CODE END WHILE */
+  	   {
+  	     /* USER CODE END WHILE */
 
-    		 	  // RED 2 ON
-    		  	  if(red2 == 5){
-    		 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,RESET);
-    		 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,SET);
-    		 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,SET);
+  	 	  // RED 2 ON
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,RESET);
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,SET);
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,SET);
 
-    		 	  // GREEN 1 ON
-    		 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
-    		 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,SET);
-    		 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
-    		  	  }
-    		 	  if(red2>0 ){
-    		 		 display7SEG(red2--); 	// 5 sec red2
-    		 		 if(green1>0)			// 3 sec green1
-    		 		 display7SEG_2(green1--);
-    		 		 else{
-    		 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,SET);		// turn off green 1
-    		 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);		// 2 sec yellow1
-    		 			if(yellow1>0){
-    		 				 display7SEG_2(yellow1--);
-    		 				 }
-    		 		 }
-    		 	  }
-
-
-
-    		 	  // YELLOW 1
-
-    		 	  else{
-    				  if(red1 == 5 && red2 ==0){
-    				  //RED 1 ON
-    				  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
-    				  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
-
-    				  //GREEN 2 ON
-    				  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,SET);
-    				  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,SET);
-    				  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,RESET);
-    				  }
-    				 if(red1>0){
-    							 display7SEG_2(red1--);					// 5sec red1
-    							 if(green2>0) display7SEG(green2--);	// 3sec green2
-    							 else{
-    								HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,SET);		// turn off green2
-    								HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,RESET);		// turn on yellow2
-    								if(yellow2>0) display7SEG(yellow2--);			// 2sec yellow2
-    							 }
-    				if(red1 == 0) resetTime();
-    				 }
+  	 	  // GREEN 1 ON
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,SET);
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+  	 	  while(red2>0 ){
+  	 		 display7SEG(red2--); 	// 5 sec red2
+  	 		 if(green1>0)			// 3 sec green1
+  	 		 display7SEG_2(green1--);
+  	 		 else{
+  	 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,SET);		// turn off green 1
+  	 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);		// 2 sec yellow1
+  	 			if(yellow1>0){
+  	 				 display7SEG_2(yellow1--);
+  	 				 }
+  	 		 }
+  	 		 HAL_Delay(1000);
+  	 	  }
+  	 	  red2 =5;
+  	 	  green1 = 3;
+  	 	  yellow1 = 2;
+  	 	  // YELLOW 1
 
 
-    		 	 }
-    		 	 HAL_Delay(1000);
-    		   }
+
+  	 	  //RED 1 ON
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+
+  	 	  //GREEN 2 ON
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,SET);
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,SET);
+  	 	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,RESET);
+  	 	  while(red1>0){
+  	 	 	 		 display7SEG_2(red1--);					// 5sec red1
+  	 	 	 		 if(green2>0) display7SEG(green2--);	// 3sec green2
+  	 	 	 		 else{
+  	 	 	 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,SET);		// turn off green2
+  	 	 	 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,RESET);		// turn on yellow2
+  	 	 	 			if(yellow2>0) display7SEG(yellow2--);			// 2sec yellow2
+  	 	 	 		 }
+  	 	 	 		 HAL_Delay(1000);
+  	 	 	 	  }
+  	 	  red1 = 5;
+  	 	  yellow2 = 2;
+  	 	  green2 = 3;
+
+  	   }
     /* USER CODE END 3 */
   }
 /**

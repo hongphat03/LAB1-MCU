@@ -208,14 +208,6 @@ int main(void)
     int green2 = 3;
     int yellow2 = 2;
     int yellow1 = 2;
-    void resetTime(){
-  	  red1 = 5;
-  	  red2 = 5;
-  	  green1 = 3;
-  	  green2 = 3;
-  	  yellow2 = 2;
-  	  yellow1 = 2;
-    }
     while (1)
     		   {
     		     /* USER CODE END WHILE */
