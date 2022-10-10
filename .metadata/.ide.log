@@ -617,3 +617,71 @@
 2022-10-08 16:55:38,224 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 3480mS.
 2022-10-08 16:55:38,226 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
 2022-10-08 16:55:38,234 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-10-08 17:24:40,119 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 670254800 Bytes (1020264448)
+2022-10-08 17:24:41,122 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 689562376 Bytes (1020264448)
+2022-10-08 17:24:43,083 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 730886920 Bytes (1020264448)
+2022-10-08 17:24:43,475 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-10-08 17:24:43,475 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-10-08 17:24:43,476 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-10-08 17:24:43,476 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-10-08 17:24:43,477 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2022-10-08 17:24:43,799 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\license.tmp_save
+2022-10-08 17:24:43,938 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\license.tmp
+2022-10-08 17:24:44,071 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\gpio.tmp_save
+2022-10-08 17:24:44,135 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\gpio.tmp
+2022-10-08 17:24:44,191 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\stm32f1xx_it.c_save
+2022-10-08 17:24:44,356 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\stm32f1xx_it.c
+2022-10-08 17:24:44,372 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\stm32f1xx_it.h_save
+2022-10-08 17:24:44,441 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\stm32f1xx_it.h
+2022-10-08 17:24:44,482 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2022-10-08 17:24:44,657 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\stm32f1xx_hal_msp.c
+2022-10-08 17:24:44,662 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\system.tmp_save
+2022-10-08 17:24:44,713 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\system.tmp
+2022-10-08 17:24:44,730 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2022-10-08 17:24:44,804 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\stm32f1xx_hal_conf.h
+2022-10-08 17:24:44,831 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\main.h_save
+2022-10-08 17:24:44,920 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\main.h
+2022-10-08 17:24:44,931 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\main.c_save
+2022-10-08 17:24:45,044 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\main.c
+2022-10-08 17:24:46,044 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 218mS.
+2022-10-08 17:24:46,048 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2022-10-08 17:24:46,461 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2022-10-08 17:24:48,590 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2542mS.
+2022-10-08 17:24:48,592 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2022-10-08 17:24:48,596 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-10-08 17:25:46,218 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 750701536 Bytes (1050673152)
+2022-10-08 17:25:47,480 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 772721632 Bytes (1050673152)
+2022-10-08 17:25:49,998 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 853988320 Bytes (1050673152)
+2022-10-08 17:25:50,304 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-10-08 17:25:50,305 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-10-08 17:25:50,305 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-10-08 17:25:50,305 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-10-08 17:25:50,307 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2022-10-08 17:25:50,622 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\license.tmp_save
+2022-10-08 17:25:50,688 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\license.tmp
+2022-10-08 17:25:50,758 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\gpio.tmp_save
+2022-10-08 17:25:50,872 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\gpio.tmp
+2022-10-08 17:25:50,940 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\stm32f1xx_it.c_save
+2022-10-08 17:25:51,017 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\stm32f1xx_it.c
+2022-10-08 17:25:51,023 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\stm32f1xx_it.h_save
+2022-10-08 17:25:51,084 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\stm32f1xx_it.h
+2022-10-08 17:25:51,106 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2022-10-08 17:25:51,332 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\stm32f1xx_hal_msp.c
+2022-10-08 17:25:51,341 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\system.tmp_save
+2022-10-08 17:25:51,420 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\MXTmpFiles\system.tmp
+2022-10-08 17:25:51,435 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2022-10-08 17:25:51,512 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\stm32f1xx_hal_conf.h
+2022-10-08 17:25:51,537 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\main.h_save
+2022-10-08 17:25:51,644 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Inc\main.h
+2022-10-08 17:25:51,655 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\main.c_save
+2022-10-08 17:25:51,786 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB1_final\lab1\Core\Src\main.c
+2022-10-08 17:25:52,864 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 230mS.
+2022-10-08 17:25:52,868 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2022-10-08 17:25:53,351 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2022-10-08 17:25:55,534 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2666mS.
+2022-10-08 17:25:55,536 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2022-10-08 17:25:55,540 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-10-11 00:24:03,876 [INFO] Activator:177 - 
+
+
+2022-10-11 00:24:03,878 [INFO] Activator:178 - !SESSION log4j initialized
