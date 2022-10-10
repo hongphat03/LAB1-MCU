@@ -91,63 +91,97 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  void reset(){
-  	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
-  	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
-  	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,GPIO_PIN_RESET);
-  	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,GPIO_PIN_RESET);
-  	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_RESET);
-  	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_RESET);
-  	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_6,GPIO_PIN_RESET);
+  void clearAllClock(){
+    	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_13,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_14,RESET);
+  	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,RESET);
+  	  }
+  void setNumberOnClock(int num){
+  	  if(num==0){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,SET);
+  	  }
+  	  if(num==1){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,SET);
+  	  	  }
+  	  if(num==2){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,SET);
+  	  	  }
+  	  if(num==3){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
+  	  	  }
+  	  if(num==4){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,SET);
+  	  	  }
+  	  if(num==5){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,SET);
+  	  	  }
+  	  if(num==6){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,SET);
+  	  	  }
+  	  if(num==7){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,SET);
+  	  	  }
+  	  if(num==8){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,SET);
+  	  	  }
+  	  if(num==9){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,SET);
+  	  	  }
+  	  if(num==10){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_13,SET);
+  	  	  }
+  	  if(num==11){
+  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_14,SET);
+  	  	  }
     }
-
-    void display7SEG(int num){
-  	  reset();
-  	  if(num == 0){
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_6,GPIO_PIN_SET);
-  	  }
-  	   if(num==1){
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_6,GPIO_PIN_SET);
-
-  	  }
-  	   if(num==2){
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_SET);
-
-  	  }
-  	   if(num==3){
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_SET);
-
-  	  }
-  	   if(num==4){
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
-  	  }
-  	   if(num==5){
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
-  		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
-  	   }
-  	   if(num==6){
-  		   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
-  	   }
-  	   if(num==7){
-  		   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,GPIO_PIN_SET);
-  		   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
-  		   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_SET);
-  		   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_6,GPIO_PIN_SET);
-  	   }
-  	   if(num==9){
-  		   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
-  	   }
-
-    }
-  	int TimeGreen = 3;
+  void clearNumberOnClock(int num){
+    	  if(num==0){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_15,RESET);
+    	  }
+    	  if(num==1){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+    	  	  }
+    	  if(num==2){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+    	  	  }
+    	  if(num==3){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+    	  	  }
+    	  if(num==4){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+    	  	  }
+    	  if(num==5){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,RESET);
+    	  	  }
+    	  if(num==6){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,RESET);
+    	  	  }
+    	  if(num==7){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,RESET);
+    	  	  }
+    	  if(num==8){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,RESET);
+    	  	  }
+    	  if(num==9){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,RESET);
+    	  	  }
+    	  if(num==10){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_13,RESET);
+    	  	  }
+    	  if(num==11){
+    		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_14,RESET);
+    	  	  }
+      }
+  int TimeGreen = 3;
     int TimeYellow = 2;
     int TimeRed = 5;
     int re = 0;
